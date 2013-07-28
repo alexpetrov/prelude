@@ -48,9 +48,19 @@
 (setq inhibit-startup-screen t)
 
 ;; nice scrolling
-(setq scroll-margin 0
-      scroll-conservatively 100000
-      scroll-preserve-screen-position 1)
+;;(setq scroll-margin 0
+;;      scroll-conservatively 100000
+;;      scroll-preserve-screen-position 1)
+
+(display-time-mode t)
+
+;; disable fringe-mode
+(custom-set-variables
+'(fringe-mode 0 nil (fringe))
+)
+
+;; disable scroll-bar
+(scroll-bar-mode -1)
 
 ;; mode line settings
 (line-number-mode t)

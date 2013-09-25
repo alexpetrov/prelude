@@ -29,7 +29,10 @@
 (global-set-key (kbd "M-ю") 'end-of-buffer)
 
 ;; Save-buffer
-(global-set-key (kbd "C-x C-ы") 'save-buffer)
+(global-set-key (kbd "C-ч C-ы") 'save-buffer)
+
+;; Find file
+(global-set-key (kbd "C-ч C-а") 'ido-find-file)
 
 ;; Forward-char
 (global-set-key (kbd "C-а") 'forward-char)

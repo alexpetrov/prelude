@@ -52,6 +52,23 @@
 ;; Backward-word
 (global-set-key (kbd "M-и") 'backward-word)
 
+;; Goto begining
+(global-set-key (kbd "C-ф") 'prelude-move-beginning-of-line)
+
+;; Move to the end of line
+(global-set-key (kbd "C-у") 'move-end-of-line)
+
+;; Kill line
+(global-set-key (kbd "C-л") 'kill-line)
+
+;; Yank
+(global-set-key (kbd "C-н") 'yank)
+
+;; Kill-region
+(global-set-key (kbd "C-ц") 'kill-region)
+
+;; Kill-ring-save
+(global-set-key (kbd "M-ц") 'kill-ring-save)
 
 (provide 'key-bindings)
 

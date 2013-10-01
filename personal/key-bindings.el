@@ -3,7 +3,7 @@
 
 ;;; Commentary:
 
-;; This file configures Lilypond-mode for editing scores
+;; This file configures key-bindings
 
 ;;; License:
 

@@ -1,3 +1,3 @@
-(prelude-require-package '(keymap-utils))
+(prelude-require-package 'keymap-utils)
 
 (provide 'packages)

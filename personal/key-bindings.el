@@ -24,6 +24,8 @@
 
 ;;; Code:
 
+(setq projectile-require-project-root nil)
+
 ;; Set basic editing commands to russian letters
 ;; Go to the end of buffer
 (global-set-key (kbd "M-ю") 'end-of-buffer)

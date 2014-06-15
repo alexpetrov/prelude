@@ -24,7 +24,7 @@
 
 ;;; Code:
 
-
+(ido-mode -1)
 
 (setq projectile-require-project-root nil)
 

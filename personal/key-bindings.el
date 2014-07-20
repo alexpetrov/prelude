@@ -24,10 +24,7 @@
 
 ;;; Code:
 
-(ido-mode -1)
-
 (setq projectile-require-project-root nil)
-
 
 ;; Got this recipe from here
 ;;http://www.linux.org.ru/forum/general/9959057?lastmod=1387945045503#comment-9959379

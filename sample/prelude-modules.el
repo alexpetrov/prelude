@@ -1,5 +1,4 @@
 ;;; Uncomment the modules you'd like to use and restart Prelude afterwards
-
 ;; Emacs IRC client
 (require 'prelude-erc)
 (require 'prelude-ido) ;; Super charges Emacs completion for C-x C-f and more
@@ -8,7 +7,6 @@
 (require 'prelude-company)
 ;; (require 'prelude-key-chord) ;; Binds useful features to key combinations
 ;; (require 'prelude-evil)
-
 ;;; Programming languages support
 (require 'prelude-c)
 (require 'prelude-clojure)

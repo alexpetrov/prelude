@@ -26,6 +26,11 @@
 
 (setq projectile-require-project-root nil)
 
+(prelude-require-package 'magit-gitflow)
+
+;; (add-hook 'magit-mode-hook 'turn-on-magit-gitflow)
+
+
 ;; Got this recipe from here
 ;;http://www.linux.org.ru/forum/general/9959057?lastmod=1387945045503#comment-9959379
 
@@ -53,6 +58,13 @@
       (activate-input-method current))))
 
 (reverse-input-method 'russian-computer)
+
+;; other-window
+(global-set-key (kbd "C-ч щ") 'other-window)
+
+(global-set-key (kbd "C-ч Щ") (lambda ()
+                                (interactive)
+                                (other-window -1)))
 
 ;; Set basic editing commands to russian letters
 ;; Go to the end of buffer

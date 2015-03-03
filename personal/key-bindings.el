@@ -59,9 +59,21 @@
 
 (reverse-input-method 'russian-computer)
 
+;; switch-buffer
+(global-set-key (kbd "C-ч и") 'ido-switch-buffer)
+
+;; switch-buffer
+(global-set-key (kbd "C-ч C-и") 'ibuffer)
+
+;; execute form-at-point
+(global-set-key (kbd "C-ч C-у") 'eval-last-sexp)
+
+;; undo
+(global-set-key (kbd "C-ч г") 'undo-tree-visualize)
+
 ;; other-window
 (global-set-key (kbd "C-ч щ") 'other-window)
-
+;; other-window previous
 (global-set-key (kbd "C-ч Щ") (lambda ()
                                 (interactive)
                                 (other-window -1)))

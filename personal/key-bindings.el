@@ -77,6 +77,13 @@
 ;; list bookmarks
 (global-set-key (kbd "C-ч к д") 'bookmark-bmenu-list)
 
+;; ido-kill-buffer
+(global-set-key (kbd "C-ч л") 'ido-kill-buffer)
+
+;; other-window
+(global-set-key (kbd "C-ч щ") 'other-window)
+
+
 ;; other-window
 (global-set-key (kbd "C-ч щ") 'other-window)
 ;; other-window previous

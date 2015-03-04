@@ -71,6 +71,12 @@
 ;; undo
 (global-set-key (kbd "C-ч г") 'undo-tree-visualize)
 
+;; create bookmark
+(global-set-key (kbd "C-ч к ь") 'bookmark-set)
+
+;; list bookmarks
+(global-set-key (kbd "C-ч к д") 'bookmark-bmenu-list)
+
 ;; other-window
 (global-set-key (kbd "C-ч щ") 'other-window)
 ;; other-window previous

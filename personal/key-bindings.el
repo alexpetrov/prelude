@@ -137,6 +137,19 @@
 ;; Kill-ring-save
 (global-set-key (kbd "M-ц") 'kill-ring-save)
 
+(defun gk-markdown-preview-buffer ()
+  (interactive)
+  (let* ((buf-this (buffer-name (current-buffer)))
+         (buf-html (get-buffer-create
+                    (format "*gk-md-html (%s)*" buf-this))))
+    (markdown-other-window (buffer-name buf-html))
+    (shr-render-buffer buf-html)
+    (eww-mode)
+    (kill-buffer buf-html)))
+
+(global-set-key (kbd "C-c C-c p") 'gk-markdown-preview-buffer)
+(global-set-key (kbd "C-с C-с з") 'gk-markdown-preview-buffer)
+
 (provide 'key-bindings)
 
 ;;; key-bindings.el ends here

@@ -28,6 +28,9 @@
 
 (prelude-require-package 'magit-gitflow)
 
+;; Globally change default font
+(add-to-list 'default-frame-alist '(font . "PT Mono-11" ))
+(set-frame-font "PT Mono-11" nil t)
 ;; (add-hook 'magit-mode-hook 'turn-on-magit-gitflow)
 
 
